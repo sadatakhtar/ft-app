@@ -1,0 +1,152 @@
+.mainpage_container{
+    height: 110vh;
+    background-color: #F4E8DD;
+}
+.mainpage_heading{
+    
+   display: flex;
+    width: 95%;
+    margin: auto;
+}
+.mainpage_heading > h2 {
+    font-weight: 400;
+    color: rgb(95, 92, 92);
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.mainpage_wrapper{
+    height: 90vh;
+}
+.mainpage_left{
+    
+    /* background-color: #F6F3F0; */
+    width: 60%;
+    height: 100%;
+    margin: auto;
+   
+}
+.mainpage_left_box1{
+   
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    background-color: whitesmoke;
+}
+.box1_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.box1_inner > h2{
+    width: 40%;
+    height: fit-content;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+.mainpage_left_box1 > p{
+    width: 60%;
+    font-size: 18px;
+    margin-top: 0%;
+}
+.mainpage_left_box1 > h4{
+    width: 60%;
+    font-size: 15px;
+    color: gray;
+}
+
+.mainpage_left_box1 > h3{
+    width: 60%;
+    font-size: 18px;
+    margin-bottom: 0%;
+    color: #990f3d;
+}
+.mainpage_right{
+   
+    width: 20%;
+    height: 95%;
+    margin: auto;
+    
+}
+.mainpage_wrapper{
+  
+    width: 92%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    
+}
+.mainpage_left_borders{
+    
+    width: 97%;
+    padding-top: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mainpage_left_sub_wrapper{
+  
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: auto;
+}
+.bottom_box1, .bottom_box2{
+    background-color: whitesmoke;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+    width: 370px;
+}
+.bottom_box_small_title{
+    color: #990f3d;
+}
+.bottom_box1 > h3 {
+    width: 70%;
+}
+/* .mainpage_left_main{
+    border: 2px solid green;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.mainpage_right{
+
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.borders{
+    display: flex;
+    justify-content: center;
+}
+.mainpage_right > h3 {
+    text-align: center;
+}
+
+.sideboxes > h3 {
+    color: #990f3d;
+}
+
+.searchbox {
+    background-color: #33302e;
+    display: flex;
+    justify-content: center;
+    width: 82%;
+    margin: auto;
+}
+
+.searchbox > input {
+    height: 2rem;
+    width: 25rem;
+    font-size: 1.2rem;
+}
+.searchbox > button {
+    height: 2.4rem;
+    width: 8rem;
+}
+
+.toggle{
+    display: none;
+}
