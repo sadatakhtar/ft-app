@@ -116,6 +116,7 @@
 
     background-color: whitesmoke;
     padding: 20px;
+   
 }
 .borders{
     display: flex;
@@ -127,6 +128,7 @@
 
 .sideboxes > h3 {
     color: #990f3d;
+    
 }
 
 .searchbox {
