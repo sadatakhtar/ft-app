@@ -84,6 +84,9 @@
     display: flex;
     justify-content: space-between;
 }
+.borderz{
+    width: 410px;
+}
 .mainpage_left_sub_wrapper{
   
     display: flex;
@@ -131,6 +134,10 @@
     
 }
 
+.side_images{
+    width: 300px;
+}
+
 .searchbox {
     background-color: #33302e;
     display: flex;
@@ -151,4 +158,117 @@
 
 .toggle{
     display: none;
+}
+
+.loader{
+
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 1440px) {
+    /* .mainpage_left_borders{
+        border: 1px solid red;
+        width: 90%;
+        padding-top: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    } */
+    .borderz{
+        width: 300px;
+    }
+    .box1_inner > h2 {
+        font-size: 30px;
+    }
+    #main_ptag{
+        font-size: 16px;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .box1_inner > img {
+        width: 250px;
+    }
+    .side_images{
+        width: 200px;
+        padding-left: 20px;
+    }
+    .sideboxes > h3, p {
+        padding-left: 20px;
+    }
+    .bottom_box1, .bottom_box2{
+        width: 270px;
+        
+    }
+    #box1_p{
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1120px) {
+    .borderz{
+        width: 250px;
+    }
+    .box1_inner > img {
+        width: 230px;
+        height: 150px;
+    }
+    .side_images{
+        width: 170px;
+        padding-left: 20px;
+    }
+    .bottom_box1, .bottom_box2{
+        width: 210px;
+        
+    }
+    .box1_inner > h2 {
+        font-size: 28px;
+    }
+    #main_ptag{
+        font-size: 15px;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .borderz{
+        width: 220px;
+    }
+    .box1_inner > img {
+        width: 220px;
+        height: 140px;
+    }
+    .side_images{
+        width: 170px;
+        padding-left: 5px;
+    }
+    .bottom_box1, .bottom_box2{
+        width: 180px;
+        
+    }
+
+    .sideboxes > h3, p {
+        padding-left: 5px;
+    }
+    .box1_inner > h2 {
+        font-size: 25px;
+    }
+
+    #main_ptag{
+        font-size: 14px;
+        padding: 0;
+        padding-top: 10px;
+    }
+
 }
