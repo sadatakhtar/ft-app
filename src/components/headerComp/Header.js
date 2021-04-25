@@ -2,7 +2,9 @@ import React from 'react'
 import burgerIcon from '../../assets/burgermenu.png'
 import searchIcon from '../../assets/searchbox.png'
 import profileIcon from '../../assets/myFT.png'
+import { motion } from 'framer-motion'
 import './Header.css'
+import FutsiBar from '../futsiBar/FutsiBar'
 
 function Header({searcher, setSearcher}) {
 
@@ -12,21 +14,32 @@ function Header({searcher, setSearcher}) {
     }
     
     return (
-        <div className="header_container">
+        <div 
+        initial={{ y: -200}}
+        animate={{ y: 0}}
+        transition={{ delay: 1, duration: 1, type: 'spring'}}
+        className="header_container"
+        >
+            <FutsiBar />
             <div className="header_top">
                 <div className="header_burger">
-                    <img src={burgerIcon} alt="burger menu icon" width="40px" />
+                    <img src={burgerIcon} alt="burger menu icon" className="header_burger_icon" />
                 </div>
-                <div className="header_search">
+                <motion.div 
+                initial={{ x: -300}}
+                animate={{ x: 0}}
+                transition={{delay: 3, duration: 1.5}}
+                className="header_search"
+                >
                     
-                    <img src={searchIcon} alt="search box icon" width="30" onClick={handleSearch}/>
+                    <img src={searchIcon} alt="search box icon" className="header_search_icon" onClick={handleSearch}/>
                     {/* <input type="text" ></input> */}
-                </div>
+                </motion.div>
                 <div className="header_title">
                     <h1>FINANCIAL TIMES</h1>
                 </div>
                 <div className="header_profile">
-                    <img src={profileIcon} alt="profile link" width="50"/>
+                    <img src={profileIcon} alt="profile link" className="header_profile_myFT"/>
                 </div>
             </div>
             <hr/>

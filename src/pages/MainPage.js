@@ -12,10 +12,10 @@ function MainPage({searcher, setSearcher}) {
     const [searchValue, setSearchValue] = useState('');
     const [newSearchValue, setNewSearchValue] = useState('');
 
-
+//https://strengthened-battle-march.glitch.me/news
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('https://strengthened-battle-march.glitch.me/news'); 
+      const res = await axios.get('https://strengthened-battle-march.glitch.me/news');
       setHeadLine(res.data);
       setIsLoading(true);
       console.log(headLine);
@@ -27,19 +27,20 @@ function MainPage({searcher, setSearcher}) {
 }, []);
 
  console.log(searchValue);
+ console.log(newSearchValue);
  
     //FUNCTION TO HANDLE THE SEARCH VALUE
     const handleSearch = (e) => {
         setSearchValue(e.target.value);
         
 
-        setNewSearchValue(headLine.filter(({title, description, content, source}) => {
+        setNewSearchValue(headLine.filter(({title, description, source}) => {
             // return (title.toLowerCase().includes(searchValue) || 
-            // description.toLowerCase().includes(searchValue)) ||
+           
             // content.toLowerCase().includes(searchValue) ||
-          return   source.name.toLowerCase().includes(searchValue) ||
-            title.toLowerCase().includes(searchValue);
-
+          return title.toLowerCase().includes(searchValue) || 
+          description.toLowerCase().includes(searchValue) ||
+          source.name.toLowerCase().includes(searchValue);
         }))
       
     }
@@ -96,29 +97,29 @@ function MainPage({searcher, setSearcher}) {
                 </div>
                 <div className="mainpage_right">
                     <div className="borders">
-                        <img src={border} alt="line" />
+                        <img src={border} alt="line" className="borderz"/>
                     </div>
                    
                     <h3>Recommended</h3>
                     <div className="sideboxes">
-                        <h3>{headLine[4].source.name}</h3>
-                        <img src={headLine[4].urlToImage} alt="tree " className="side_images"/>
-                        <p>{headLine[4].title}</p>   
+                        <h3>{newSearchValue.length > 1 ? (newSearchValue[1].source.name) : (headLine[6].source.name)}</h3>
+                        <img src={newSearchValue.length > 1 ? (newSearchValue[1].urlToImage) : (headLine[6].urlToImage)} alt="tree " className="side_images"/>
+                        <p>{newSearchValue.length > 1 ? (newSearchValue[1].title) : (headLine[7].title)}</p>   
                     </div>
 
                     <div className="sideboxes">
-                    <h3>{headLine[2].source.name}</h3>
-                        <img src={headLine[2].urlToImage} alt="scenic" className="side_images"/>
-                        <p>{headLine[2].title}</p>   
+                    <h3>{newSearchValue.length > 1 ? (newSearchValue[2].source.name) : (headLine[2].source.name)}</h3>
+                        <img src={newSearchValue.length > 1 ? (newSearchValue[2].urlToImage) : (headLine[2].urlToImage)} alt="scenic" className="side_images"/>
+                        <p>{newSearchValue.length > 1 ? (newSearchValue[2].title) : (headLine[2].title)}</p>   
                     </div>
 
                     <div className="sideboxes">
-                        <h3>{headLine[1].source.name}</h3>
-                        <img src={headLine[1].urlToImage} alt="" className="side_images"/>
-                        <p>{headLine[1].title}</p>   
+                        <h3>{newSearchValue.length > 1 ? (newSearchValue[3].source.name) : (headLine[1].source.name)}</h3>
+                        <img src={newSearchValue.length > 1 ? (newSearchValue[3].urlToImage) : (headLine[1].urlToImage)} alt="" className="side_images"/>
+                        <p>{newSearchValue.length > 1 ? (newSearchValue[3].title) : (headLine[1].title)}</p>   
                     </div>
                     <div className="borders">
-                        <img src={border} alt="line" />
+                        <img src={border} alt="line" className="borderz" />
                     </div>
                     
 
