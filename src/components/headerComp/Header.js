@@ -25,16 +25,10 @@ function Header({searcher, setSearcher}) {
                 <div className="header_burger">
                     <img src={burgerIcon} alt="burger menu icon" className="header_burger_icon" />
                 </div>
-                <motion.div 
-                initial={{ x: -300}}
-                animate={{ x: 0}}
-                transition={{delay: 3, duration: 1.5}}
-                className="header_search"
-                >
-                    
+                <div className="header_search">
                     <img src={searchIcon} alt="search box icon" className="header_search_icon" onClick={handleSearch}/>
                     {/* <input type="text" ></input> */}
-                </motion.div>
+                </div>
                 <div className="header_title">
                     <h1>FINANCIAL TIMES</h1>
                 </div>

@@ -1,5 +1,5 @@
 .mainpage_container{
-    height: 110vh;
+    height: 130vh;
     background-color: #F4E8DD;
 }
 .mainpage_heading{
@@ -64,7 +64,7 @@
 .mainpage_right{
    
     width: 20%;
-    height: 95%;
+    height: 100vh;
     margin: auto;
     
 }
@@ -275,7 +275,7 @@
 
 @media screen and (max-width: 640px) {
     .mainpage_container{
-        height: 150vh;
+        height: 200vh;
     }
     .mainpage_left{
         
@@ -345,3 +345,73 @@
 
 }
 
+@media screen and (max-width: 460px){
+    .mainpage_container{
+        height: 220vh;
+    }
+    .mainpage_left{
+        
+        width: 90%;
+    }
+   
+    .borderz{
+        width: 160px;
+    }
+
+    .box1_inner > img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .box1_inner > h2 {
+        font-size: 18px;
+    }
+
+    #main_ptag{
+        font-size: 14px;
+        padding: 0;
+        padding-top: 10px;
+    }
+    
+    .mainpage_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom_box1, .bottom_box2{
+        width: 130px;
+        
+    }
+    .bottom_box1 > h3, .bottom_box2 > h3 {
+        font-size: 14px;
+    }
+    .bottom_box1 > p, .bottom_box2 > p{
+        font-size: 12px;
+    }
+
+    .side_images{
+        width: 250px;
+        padding-left: 2px;
+    }
+    .mainpage_right{
+        margin-top: 100px;
+    }
+    .mainpage_right > h3{
+        font-size: 15px;
+    }
+
+    .sideboxes > h3 {
+        font-size: 18px;
+    }
+    .sideboxes > p {
+        font-size: 16px;
+    }
+
+    .mainpage_right{
+       
+        width: 80%;
+    }
+    .mainpage_right > h3 {
+        font-size: 25px;
+    }
+}
