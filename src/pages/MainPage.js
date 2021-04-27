@@ -24,7 +24,7 @@ function MainPage({searcher, setSearcher}) {
     
     fetchData();
    
-}, []);
+}, []) //eslint-disable-line react-hooks/exhaustive-deps
 
  
     //FUNCTION TO HANDLE THE SEARCH VALUE
