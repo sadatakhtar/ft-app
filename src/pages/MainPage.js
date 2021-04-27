@@ -12,7 +12,7 @@ function MainPage({searcher, setSearcher}) {
     const [searchValue, setSearchValue] = useState('');
     const [newSearchValue, setNewSearchValue] = useState('');
 
-//https://strengthened-battle-march.glitch.me/news
+
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get('https://strengthened-battle-march.glitch.me/news');
@@ -26,28 +26,16 @@ function MainPage({searcher, setSearcher}) {
    
 }, []);
 
- console.log(searchValue);
- console.log(newSearchValue);
  
     //FUNCTION TO HANDLE THE SEARCH VALUE
     const handleSearch = (e) => {
         setSearchValue(e.target.value);
-        
-
-        setNewSearchValue(headLine.filter(({title, description, source}) => {
-            // return (title.toLowerCase().includes(searchValue) || 
-           
-            // content.toLowerCase().includes(searchValue) ||
-          return title.toLowerCase().includes(searchValue) || 
-          description.toLowerCase().includes(searchValue) ||
-          source.name.toLowerCase().includes(searchValue);
-        }))
+        setNewSearchValue(headLine.filter(({ main }) => {
+          return main.toLowerCase().includes(searchValue);  
+        }));
       
-    }
-
-    // console.log(headLine);
-    // console.log(newSearchValue);
-   
+    };
+  
     return !isLoading ? (<p className="loader">Loading....</p>) : (
         <div className="mainpage_container">
          
@@ -61,7 +49,7 @@ function MainPage({searcher, setSearcher}) {
             <div className="mainpage_wrapper">
                 <div className="mainpage_left">
                     <div className="mainpage_left_box1">
-                        <h3>{newSearchValue.length > 1 ? (newSearchValue[0].source.name) : (headLine[7].source.name)}</h3>
+                        <h3>{newSearchValue.length > 1 ? (newSearchValue[0].main) : (headLine[7].main)}</h3>
                         <div className="box1_inner">
                              <h2>{newSearchValue.length > 1 ? (newSearchValue[0].title) : (headLine[7].title)}</h2>
                              <img src={newSearchValue.length > 1 ? (newSearchValue[0].urlToImage) : (headLine[7].urlToImage)} alt="pic" width="350"/>
@@ -73,7 +61,7 @@ function MainPage({searcher, setSearcher}) {
                   
                     <div className="mainpage_left_borders">
                         <div>
-                        <img src={border} alt="border" className="borderz" />
+                        <img src={border} alt="border" className="borderz" id="one_border" />
                         </div>
                         <div>
                         <img src={border} alt="border" className="borderz"/>
@@ -82,12 +70,12 @@ function MainPage({searcher, setSearcher}) {
                     </div>
                     <div className="mainpage_left_sub_wrapper">
                         <div className="bottom_box1">
-                            <h3 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].source.name) : (headLine[6].source.name)}</h3>
+                            <h3 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].main) : (headLine[6].main)}</h3>
                             <h3>{newSearchValue.length > 1 ? (newSearchValue[1].title) : (headLine[6].title)}</h3>
                             <p id="box1_p">{newSearchValue.length > 1 ? (newSearchValue[1].description) : (headLine[6].description)}</p>
                         </div>
                         <div className="bottom_box2">
-                        <h3 className="bottom_box_small_title">{headLine[5].source.name}</h3>
+                        <h3 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].main) : (headLine[5].main)}</h3>
                         <h3>{headLine[5].title}</h3>
                             <p id="box1_p">{headLine[5].description}</p>
                         </div>
@@ -132,4 +120,4 @@ function MainPage({searcher, setSearcher}) {
     )
 }
 
-export default MainPage
+export default MainPage;

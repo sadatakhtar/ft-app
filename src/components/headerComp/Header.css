@@ -110,11 +110,26 @@ li:hover{
     }
 
 }
+@media screen and (max-width: 1440px){
+    .header_bottom > ul{
+        width: 75%;
+    }
+    .header_bottom{
+        margin-left: -20px;   
+    }
+}
 
 @media screen and (max-width: 960px){
     .header_bottom > ul{
+       
         width: 90%;
+        font-size: 15px;
         margin-left: 2%;
+    }
+    .header_bottom{
+        
+        width: 90%;
+        margin: auto;
     }
 
     .header_title > h1 {
@@ -147,13 +162,15 @@ li:hover{
         width: 30px;
         height: 20px;
     }
+    .header_bottom {
+        width: 100%;
+    }
     .header_bottom > ul{
-        
         width: 90%;
         margin-left: 2rem;
     }
     .header_bottom > ul > li{
-        font-size: 10px;
+        font-size: 11px;
     }
 
 
@@ -185,4 +202,32 @@ li:hover{
     }
 
 
+}
+
+@media screen and (max-width: 320px){
+    
+    .header_title > h1 {
+       
+        font-size: 15px;
+    }
+    .header_profile_myFT {
+        width: 20px;
+    }
+    .header_search_icon{
+        width: 15px;
+    }
+    .header_burger_icon {
+        width: 15px;
+        height: 10px;
+    }
+    
+    .header_bottom > ul{
+    
+        width: 90%;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .header_bottom > ul > li{
+        font-size: 5px;
+    }
 }

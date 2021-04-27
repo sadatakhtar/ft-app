@@ -2,7 +2,6 @@ import React from 'react'
 import burgerIcon from '../../assets/burgermenu.png'
 import searchIcon from '../../assets/searchbox.png'
 import profileIcon from '../../assets/myFT.png'
-import { motion } from 'framer-motion'
 import './Header.css'
 import FutsiBar from '../futsiBar/FutsiBar'
 
@@ -10,7 +9,6 @@ function Header({searcher, setSearcher}) {
 
     const handleSearch = () => {
         setSearcher(!searcher);
-    
     }
     
     return (
@@ -27,7 +25,6 @@ function Header({searcher, setSearcher}) {
                 </div>
                 <div className="header_search">
                     <img src={searchIcon} alt="search box icon" className="header_search_icon" onClick={handleSearch}/>
-                    {/* <input type="text" ></input> */}
                 </div>
                 <div className="header_title">
                     <h1>FINANCIAL TIMES</h1>
