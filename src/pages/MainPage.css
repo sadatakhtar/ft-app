@@ -1,5 +1,5 @@
 .mainpage_container{
-    height: 130vh;
+    height: 150vh;
     background-color: #F4E8DD;
 }
 .mainpage_heading{
@@ -94,13 +94,24 @@
     width: 97%;
     margin: auto;
 }
-.bottom_box1, .bottom_box2{
+.bottom_box1{
     background-color: whitesmoke;
     padding: 20px;
     padding-top: 10px;
     margin-top: 30px;
     width: 410px;
-    height: 510px;
+    height: fit-content;
+    min-height: 400px;
+}
+.bottom_box2{
+    background-color: whitesmoke;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+    width: 410px;
+    height: fit-content;
+    min-height: 300px;
+
 }
 .bottom_box_small_title{
     color: #990f3d;
