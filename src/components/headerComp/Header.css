@@ -147,6 +147,32 @@ li:hover{
     }
 
 }
+@media screen and (max-width: 768px){
+    .header_bottom > ul{
+        width: 90%;
+        font-size: 12px;
+        margin-left: 2%;
+    }
+    .header_bottom{
+        width: 90%;
+        margin: auto;
+    }
+
+    .header_title > h1 {
+        font-size: 40px;
+    }
+    .header_profile_myFT {
+        width: 50px;
+    }
+    .header_search_icon{
+        width: 30px;
+    }
+    .header_burger_icon {
+        width: 30px;
+        height: 25px;
+    }
+
+}
 
 @media screen and (max-width: 640px) {
     .header_title > h1 {
@@ -203,12 +229,117 @@ li:hover{
 
 
 }
+@media screen and (max-width: 414px){
+    .header_title > h1 {
+        font-size: 23px;
+    }
+    .header_profile_myFT {
+        width: 30px;
+    }
+    .header_search_icon{
+        width: 15px;
+    }
+    .header_burger_icon {
+        width: 20px;
+        height: 15px;
+    }
+    .header_bottom > ul{
+      
+        width: 90%;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .header_bottom > ul > li{
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .header_title > h1 {
+        font-size: 23px;
+    }
+    .header_profile_myFT {
+        width: 30px;
+    }
+    .header_search_icon{
+        width: 15px;
+    }
+    .header_burger_icon {
+        width: 20px;
+        height: 15px;
+    }
+    .header_bottom > ul{
+      
+        width: 90%;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .header_bottom > ul > li{
+        font-size: 6px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px){
+    .header_title > h1 {
+        font-size: 21px;    
+    }
+    .header_profile_myFT {
+        width: 20px;
+    }
+    .header_search_icon{
+        width: 15px;
+    }
+    .header_burger_icon {
+        width: 15px;
+        height: 10px;
+    }
+    
+    .header_bottom > ul{
+    
+        width: 90%;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .header_bottom > ul > li{
+        font-size: 6px;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .header_title > h1 {
+        font-size: 20px; 
+         
+    }
+    .header_profile_myFT {
+        width: 22px;
+    }
+    .header_search_icon{
+        width: 15px;
+    }
+    .header_burger_icon {
+        width: 20px;
+        height: 15px;
+    }
+    
+    .header_bottom > ul{
+    
+        width: 90%;
+        padding-left: 0;
+        margin-left: 20px;
+    }
+    .header_bottom > ul > li{
+        font-size: 5px;
+    }
+
+}
 
 @media screen and (max-width: 320px){
-    
+   
     .header_title > h1 {
-       
-        font-size: 15px;
+        font-size: 17px;    
     }
     .header_profile_myFT {
         width: 20px;

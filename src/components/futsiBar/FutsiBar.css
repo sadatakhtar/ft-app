@@ -60,3 +60,10 @@
     }
 
 }
+
+@media screen and (max-width: 320px){
+    .futsibar_container{
+        display: none;
+    }
+
+}
