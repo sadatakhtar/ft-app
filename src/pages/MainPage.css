@@ -174,7 +174,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    font-size: 40px;
 
 }
 
@@ -183,14 +183,7 @@
 
 
 @media screen and (max-width: 1440px) {
-    /* .mainpage_left_borders{
-        border: 1px solid red;
-        width: 90%;
-        padding-top: 40px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-    } */
+   
     .borderz{
         width: 350px;
     }
