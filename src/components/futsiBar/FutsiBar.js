@@ -15,30 +15,14 @@ function FutsiBar() {
         className="futsibar_container"
         >
             <ul>
-                <div className="futsibar_li_div">
-                <li>FTSE 100</li>
-                <img src={ftse} alt="sign" className="li_img"/>
-                </div>
-
-                <div className="futsibar_li_div">
-                <li>S&P 500</li>
-                <img src={sp} alt="sign" className="li_img"/>
-                </div>
-                
-                <div className="futsibar_li_div">
-                <li>Euro/Dollar</li>
-                <img src={euro} alt="sign" className="li_img"/>
-                </div>
-
-                <div className="futsibar_li_div" id="pound">
-                <li>Pound/Dollar</li>
-                <img src={pound} alt="sign" className="li_img"/>
-                </div>
-                
-                <div className="futsibar_li_div_last">
-                <li>10 Year US Gov</li>
-                <img src={ftse} alt="sign" className="li_img"/>
-                </div>
+               
+                <li>FTSE 100 <img src={ftse} alt="sign" className="li_img"/></li>       
+                <li>S&P 500  <img src={sp} alt="sign" className="li_img"/></li>       
+                <li>Euro/Dollar  <img src={euro} alt="sign" className="li_img"/></li>
+                <li>Pound/Dollar <img src={pound} alt="sign" className="li_img"/></li>
+                <li>10 Year US Gov  <img src={ftse} alt="sign" className="li_img"/></li>
+               
+              
                
             </ul>
             

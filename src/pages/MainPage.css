@@ -1,5 +1,5 @@
 .mainpage_container{
-    height: 200vh;
+    /* height: 170vh; */
     background-color: #F4E8DD;
 }
 .mainpage_heading{
@@ -9,21 +9,20 @@
     margin: auto;
 }
 .mainpage_heading > h2 {
+    display: none;
     font-weight: 400;
     color: rgb(95, 92, 92);
     width: 85%;
     margin: auto;
     margin-bottom: 10px;
 }
-.mainpage_wrapper{
-    height: 90vh;
-}
+
 .mainpage_left{
-    
+    flex: 2;
     /* background-color: #F6F3F0; */
-    width: 60%;
+    /* width: 60%;
     height: 100%;
-    margin: auto;
+    margin: auto; */
    
 }
 .mainpage_left_box1{
@@ -63,16 +62,12 @@
 }
 .mainpage_right{
    
-    width: 20%;
-    height: 100vh;
-    margin: auto;
+   flex: 1;
+   margin: 0 1rem;
     
 }
 .mainpage_wrapper{
-  
-    width: 92%;
     margin: auto;
-    margin-top: 3rem;
     display: flex;
     
 }
@@ -85,7 +80,7 @@
     justify-content: space-between;
 }
 .borderz{
-    width: 450px;
+    width: 400px;
 }
 .mainpage_left_sub_wrapper{
   
@@ -194,7 +189,12 @@
 
 
 @media screen and (max-width: 1440px) {
-   
+   .mainpage_container{
+       height: 200vh;
+   }
+   .mainpage_right{
+       height: fit-content;
+   }
     .borderz{
         width: 350px;
     }
@@ -232,6 +232,19 @@
     
 }
 
+@media screen and (max-width: 1280px) {
+    /* .mainpage_container{
+        height: 210vh;
+    } */
+    .borderz{
+        width: 290px;
+    }
+    .bottom_box1, .bottom_box2{
+        width: 250px;
+    }
+
+}
+
 @media screen and (max-width: 1120px) {
     .borderz{
         width: 280px;
@@ -262,6 +275,12 @@
 
 }
 @media screen and (max-width: 1024px){
+    /* .mainpage_container{
+        height: 200vh;
+    } */
+    .mainpage_right{
+        height: fit-content;
+    }
     .borderz{
         width: 180px;
     }
@@ -274,6 +293,9 @@
 }
 
 @media screen and (max-width: 960px) {
+    .mainpage_wrapper{
+        flex-direction: column;
+    }
     .borderz{
         width: 220px;
     }
@@ -323,9 +345,9 @@
 }
 
 @media screen and (max-width: 768px){
-    .mainpage_container{
-        height: 155vh;
-    }
+    /* .mainpage_container{
+        height: 210vh;
+    } */
     .borderz{
         width: 170px;
     }
@@ -379,9 +401,9 @@
 }
 
 @media screen and (max-width: 640px) {
-    .mainpage_container{
-        height: 250vh;
-    }
+    /* .mainpage_container{
+        height: 350vh;
+    } */
     .mainpage_left_box1 > h3{
         font-size: 18px;
     }
@@ -394,8 +416,8 @@
     }
 
     .box1_inner > img {
-        width: 200px;
-        height: 120px;
+        width: 280px;
+        height: 160px;
     }
 
     .box1_inner > h2 {
@@ -403,6 +425,8 @@
     }
 
     #main_ptag{
+       
+        width: 100%;
         font-size: 20px;
         padding: 0;
         padding-top: 10px;
@@ -434,11 +458,15 @@
     .mainpage_right{
        
         height: auto;
-        margin-top: 220px;
+        margin-top: 600px;
+        width: 80%;
     }
     .mainpage_right > h3{
         font-size: 15px;
        
+    }
+    .sideboxes > img {
+        width: 87%;
     }
 
     .sideboxes > h3 {
@@ -446,14 +474,12 @@
         padding-left: 30px;
     }
     .sideboxes > p {
+       
+        width: 85%;
         font-size: 18px;
         padding-left: 30px;
     }
 
-    .mainpage_right{
-       
-        width: 80%;
-    }
     .mainpage_right > h3 {
         font-size: 25px;
     }
@@ -461,9 +487,9 @@
 }
 
 @media screen and (max-width: 460px){
-    .mainpage_container{
+    /* .mainpage_container{
         height: 230vh;
-    }
+    } */
     .mainpage_heading > h2 {
         font-size: 16px;
     }
@@ -533,9 +559,9 @@
     }
 }
 @media screen and (max-width: 414px){
-    .mainpage_container{
+    /* .mainpage_container{
         height: 290vh;
-    }
+    } */
     .mainpage_heading > h2 {
         font-size: 16px;
         padding-left: 13px;
@@ -615,7 +641,7 @@
         padding-left: 28px;
     }
     .mainpage_right{
-        margin-top: 500px;
+        margin-top: 450px;
         margin-left: 30px;
 
     }
@@ -746,9 +772,9 @@
 }
 
 @media screen and (max-width: 375px){
-    .mainpage_container{
-        height: 350vh;
-    }
+    /* .mainpage_container{
+        height: 270vh;
+    } */
     .mainpage_heading > h2 {
         font-size: 12px;
         padding-left: 20px;
@@ -825,7 +851,7 @@
         padding-left: 28px;
     }
     .mainpage_right{
-        margin-top: 650px;
+        margin-top: 490px;
         margin-left: 30px;
 
     }
@@ -850,9 +876,9 @@
 }
 
 @media screen and (max-width: 360px){
-    .mainpage_container{
+    /* .mainpage_container{
         height: 350vh;
-    }
+    } */
     .mainpage_heading > h2 {
         font-size: 12px;
         padding-left: 20px;
@@ -955,16 +981,16 @@
 }
 
 @media screen and (max-width: 320px){
-    .mainpage_container{
-        height: 260vh;
+    /* .mainpage_container{
+        height: 380vh;
        
-    }
+    } */
     .mainpage_heading > h2 {
         font-size: 14px;
         padding-left: 20px;
     }
     .mainpage_left{
-        width: 70%;
+        width: 80%;
         margin-left: 25px;
         margin-top: -40px;
     }
@@ -978,12 +1004,12 @@
     }
    
     .borderz{
-        width: 150px;
+        width: 200px;
         padding-left: 5px;  
     }
 
     .box1_inner > img {
-        width: 180px;
+        width: 210px;
         height: 100px;
         padding-bottom: 10px;
     }
@@ -1013,13 +1039,13 @@
     }
 
     .bottom_box1{
-        width: 200px;
+        width: 97%;
         min-height: fit-content;
         height: 200px;
         
     }
     .bottom_box2{
-        width: 200px;
+        width: 97%;
         min-height: fit-content;
         height: 300px;
         
@@ -1037,10 +1063,7 @@
         width: 250px;
         padding-left: 28px;
     }
-    .mainpage_right{
-        margin-top: 500px;
-    }
-    
+   
     .mainpage_right > h3{
         font-size: 15px;
     }
@@ -1050,7 +1073,7 @@
         margin: 0;
     }
     .sideboxes > img {
-        width: 200px;
+        width: 185px;
         padding-left: 0;
     }
 
@@ -1065,7 +1088,8 @@
     }
 
     .mainpage_right{
-        width: 80%;
+        width: 75%;
+        margin-top: 740px;
     }
     .mainpage_right > h3 {
         font-size: 20px;

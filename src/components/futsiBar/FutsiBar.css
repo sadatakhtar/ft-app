@@ -2,7 +2,6 @@
     color: white;
     background-color:#262a33 ;
     width: 100%;
-    height: 4vh;
     padding: 0;
     
 }
@@ -16,6 +15,10 @@
     justify-content:  space-between;
     align-items: center;
     list-style: none;
+}
+li{
+    display: flex;
+    align-items: center;
 }
 
 .futsibar_li_div {
@@ -42,6 +45,11 @@
     .futsibar_container > ul {
         width: 90%;
     }
+}
+@media screen and (max-width: 740px){
+   .futsibar_container > ul > li {
+       display: none;
+   }
 }
 
 @media screen and (max-width: 640px){
