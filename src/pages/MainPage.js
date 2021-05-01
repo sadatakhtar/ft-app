@@ -60,22 +60,22 @@ function MainPage({searcher, setSearcher}) {
                     </div>
                   
                     <div className="mainpage_left_borders">
-                        <div>
+                        {/* <div>
                         <img src={border} alt="border" className="borderz" id="one_border" />
                         </div>
                         <div>
                         <img src={border} alt="border" className="borderz"/>
-                        </div>
+                        </div> */}
                         
                     </div>
                     <div className="mainpage_left_sub_wrapper">
                         <div className="bottom_box1">
-                            <h3 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].main) : (headLine[6].main)}</h3>
+                            <h2 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].main) : (headLine[6].main)}</h2>
                             <h3>{newSearchValue.length > 1 ? (newSearchValue[1].title) : (headLine[6].title)}</h3>
                             <p id="box1_p">{newSearchValue.length > 1 ? (newSearchValue[1].description) : (headLine[6].description)}</p>
                         </div>
                         <div className="bottom_box2">
-                        <h3 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].main) : (headLine[5].main)}</h3>
+                        <h2 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].main) : (headLine[5].main)}</h2>
                         <h3>{headLine[5].title}</h3>
                             <p id="box1_p">{headLine[5].description}</p>
                         </div>

@@ -37,16 +37,16 @@
     justify-content: space-between;
 }
 .box1_inner > h2{
-    width: 40%;
+    /* width: 40%; */
     height: fit-content;
     font-size: 35px;
     margin-top: 2%;
     margin-bottom: 0%;
 }
 .mainpage_left_box1 > p{
-    width: 60%;
-    font-size: 25px;
-    margin-top: 0%;
+    /* width: 60%; */
+    font-size: 20px;
+    margin-top: 0 1rem;
 }
 .mainpage_left_box1 > h4{
     width: 60%;
@@ -56,7 +56,7 @@
 
 .mainpage_left_box1 > h3{
     width: 60%;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 0%;
     color: #990f3d;
 }
@@ -81,42 +81,46 @@
 }
 .borderz{
     width: 400px;
+   
 }
 .mainpage_left_sub_wrapper{
   
     display: flex;
     justify-content: space-between;
-    width: 97%;
-    margin: auto;
+    /* width: 97%; */
+    /* margin: auto; */
 }
 .bottom_box1{
     background-color: whitesmoke;
+    flex: 1;
+    margin:  1rem;
     padding: 20px;
-    padding-top: 10px;
-    margin-top: 30px;
-    width: 410px;
-    height: fit-content;
-    min-height: 400px;
+    
+
 }
 .bottom_box2{
     background-color: whitesmoke;
+    flex: 1;
+    margin:  1rem;
     padding: 20px;
-    padding-top: 10px;
-    margin-top: 30px;
-    width: 410px;
-    height: fit-content;
-    min-height: 300px;
+
 
 }
+
 .bottom_box_small_title{
     color: #990f3d;
+   
+}
+.bottom_box1 > h2, .bottom_box2 > h2 {
+    /* width: 70%; */
+    font-size: 18px;
 }
 .bottom_box1 > h3, .bottom_box2 > h3 {
-    width: 70%;
-    font-size: 28px;
+    /* width: 70%; */
+    font-size: 22px;
 }
 .bottom_box1 > p, .bottom_box2 > p{
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .mainpage_right{
@@ -134,22 +138,22 @@
 }
 .sideboxes {
    
-    padding-left: 20px;
+    margin-left: 4rem;
 }
 
 .sideboxes > h3 {
     color: #990f3d;
-    font-size: 25px;
+    font-size: 20px;
     
 }
 .sideboxes > p{
     
-    font-size: 20px;
-    width: 95%;
+    font-size: 18px;
+    width: 90%;
 }
 
 .side_images{
-    width: 300px;
+    width: 400px;
 }
 
 .searchbox {
@@ -189,9 +193,9 @@
 
 
 @media screen and (max-width: 1440px) {
-   .mainpage_container{
+   /* .mainpage_container{
        height: 200vh;
-   }
+   } */
    .mainpage_right{
        height: fit-content;
    }
@@ -299,9 +303,12 @@
     .borderz{
         width: 220px;
     }
+    .box1_inner > h2{
+        flex: 1.2;
+    }
     .box1_inner > img {
-        width: 220px;
-        height: 140px;
+     flex: 0.8;
+     padding: 0 0 0 1rem;
     }
     .side_images{
         width: 170px;
@@ -313,24 +320,33 @@
     .bottom_box1 > p, .bottom_box2 > p{
         font-size: 18px;
     }
+
     .bottom_box1 > h3, .bottom_box2 > h3{
         font-size: 22px;
     }
-    .mainpage_right{
-        
-        width: 250px;
+
+    .mainpage_right{ 
+        width: 35rem;
+        margin: 2rem auto ;   
     }
     .sideboxes{
-        padding-top: 20px;
-    
+        display: flex;
+        flex-direction: column;
     }
+
+    .sideboxes > img {
+       flex: 1;
+    }
+
     .sideboxes >  h3{
-        font-size: 22px;
+        font-size: 18px;
+        flex: 1;
     }
 
     .sideboxes >  p {
         font-size: 18px;
         width: 70%;
+        flex: 1;
     }
     .box1_inner > h2 {
         font-size: 25px;
@@ -373,7 +389,7 @@
         width: 100%;
     }
     .mainpage_right{
-        width: 160px;
+        width: 30rem;
     }
     .sideboxes{
         padding: 0px;
@@ -451,37 +467,37 @@
     }
 
     .side_images{
-        width: 350px;
+        /* width: 350px; */
         
-        padding-left: 30px;
+        /* padding-left: 30px; */
     }
     .mainpage_right{
        
-        height: auto;
-        margin-top: 600px;
-        width: 80%;
+        /* height: auto; */
+        /* margin-top: 600px; */
+        /* width: 80%; */
     }
     .mainpage_right > h3{
         font-size: 15px;
        
     }
     .sideboxes > img {
-        width: 87%;
+        /* width: 87%; */
     }
 
     .sideboxes > h3 {
-        font-size: 20px;
-        padding-left: 30px;
+        font-size: 1rem;
+        /* padding-left: 30px; */
     }
     .sideboxes > p {
        
-        width: 85%;
-        font-size: 18px;
-        padding-left: 30px;
+        /* width: 85%; */
+        font-size: 1.2rem;
+        /* padding-left: 30px; */
     }
 
     .mainpage_right > h3 {
-        font-size: 25px;
+        font-size: 1.2rem;
     }
 
 }
