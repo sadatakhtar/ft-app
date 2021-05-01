@@ -44,7 +44,6 @@ function MainPage({searcher, setSearcher}) {
             </div>
             <div className={searcher ? "searchbox": "toggle"}>
                  <input type="text" placeholder="Search..." onChange={handleSearch}/>
-                 {/* <button type="submit" onClick={handleSearchBtn}>Search</button> */}
             </div>
             <div className="mainpage_wrapper">
                 <div className="mainpage_left">
@@ -59,15 +58,7 @@ function MainPage({searcher, setSearcher}) {
 
                     </div>
                   
-                    <div className="mainpage_left_borders">
-                        {/* <div>
-                        <img src={border} alt="border" className="borderz" id="one_border" />
-                        </div>
-                        <div>
-                        <img src={border} alt="border" className="borderz"/>
-                        </div> */}
-                        
-                    </div>
+                   
                     <div className="mainpage_left_sub_wrapper">
                         <div className="bottom_box1">
                             <h2 className="bottom_box_small_title">{newSearchValue.length > 1 ? (newSearchValue[1].main) : (headLine[6].main)}</h2>
