@@ -8,12 +8,6 @@ Due to limited sample data(API), please use the following keywords in the search
 # Finance
 
 
-# The following points are covered for the application :-
-
-- Built using javaScript-(React framework) & node.js-(API)
-- Deployed on Netlify
-- Responsive website
-- Similar look/feel to ft.com
 
 App link: https://ft-test.netlify.app/
 
